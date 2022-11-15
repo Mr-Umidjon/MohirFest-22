@@ -168,5 +168,51 @@
     </table>
   </p>
 
+  <h2><center>Input Tags: </center></h2>
+
+  <p>
+    <b><i>Form tag:</i> It is used to create an HTML form for the user.</b>
+    <form action=""mailto:you@yourdomain.com ">
+      Name: <input name="Name" value="" size="100"> <br>
+      Email: <input name="Email" value="" size="100"> <br>
+      <center><input type="submit"></center>
+    </form>
+  </p>
+
+  <p>
+    <b><i>Submit input tag:</i> It is used to take the input from the user.</b>
+    <form action="/cgibin/example.cgi" method="post">
+      <input type="text" style="color:blue; font-family:Verdana; font-weight: bold; font-size: 12px; background-color: aqua;"
+      size="25" maxlength="30">
+      <input type="submit" value="Submit">
+    </form>
+  </p>
+
+  <p>
+    <b><i>Dropdown option tag:</i> It is used to select an option from a drop-down list.</b>
+    <form method=post action="/cgibin/example.cgi" >
+    <center>Select an option: 
+      <select>
+        <option>option 1</option>
+        <option selected>option 2</option>
+        <option>option 3</option>
+      </select>
+    </center>
+    </form>
+  </p>
+
+  <p>
+    <b><i>Radio button tag:</i> It is used to select only one option from the given options.</b>
+    <form method=post action="/cgibin/example.cgi">
+      <center>
+        Select an option: <br>
+        <input type="radio" name="option"> Option 1
+        <input type="radio" name="option" checked> Option 2
+        <input type="radio" name="option"> Option 3
+      </center>
+    </form>
+  </p>
+
+
 </body>
 </html>
