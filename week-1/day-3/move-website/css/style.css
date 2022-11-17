@@ -1,0 +1,29 @@
+
+body {
+  /* background-color: #bada55; */
+  background-color: rgb(166, 190, 190);
+  /* font-family: "Arial", sans-serif; */
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.movie-poster {
+  width: 873px;
+  height: 491px;
+  border-radius: 50px;
+  opacity: 0.6;
+  border:10px solid rgb(60, 0, 255);
+  margin-bottom: 100px;
+}
+
+.movie-title {
+  background-color: #000;
+  color: #fff;
+}
+
+.info-section {
+  background-color: #555;
+  color: #fff;
+  padding: 20px 40px;
+  border: 10px solid gold;
+}
