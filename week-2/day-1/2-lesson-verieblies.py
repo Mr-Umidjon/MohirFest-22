@@ -12,3 +12,6 @@ print(a, b, c)
 
 text = "Python is the best programming language."
 print(text)
+
+e = a + b + c
+print(e)
