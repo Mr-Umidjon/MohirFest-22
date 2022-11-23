@@ -30,3 +30,16 @@ print("-"*100)
 text = text.replace("Umidjon", "Odiljon")
 print(text)
 print("-"*100)
+
+text = text.split()
+print(text)
+print("-"*100)
+
+name = "Umidjon"
+age = 20
+
+result = "My name is {}, I am {} years old".format(name, age)
+print(result)
+print("-"*100)
+
+
