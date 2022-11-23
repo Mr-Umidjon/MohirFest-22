@@ -42,4 +42,3 @@ result = "My name is {}, I am {} years old".format(name, age)
 print(result)
 print("-"*100)
 
-
