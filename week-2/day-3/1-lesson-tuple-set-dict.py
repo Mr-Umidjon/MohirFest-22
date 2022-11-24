@@ -49,8 +49,14 @@ for num in set_num:
     print(num)
 print(100 * "-")
 
-set1 = {'a', 'b', 'c'}
-set2 = {1, 2, 3, 4}
+set1 = {'a', 'b', 'c', 1}
+set2 = {1, 2, 3, 4, 'a'}
 set3 = set1.union(set2)
 print(set3)
 print(100 * "-")
+
+set4 = set1.intersection(set2)
+print(set4)
+print(100 * "-")
+
+
