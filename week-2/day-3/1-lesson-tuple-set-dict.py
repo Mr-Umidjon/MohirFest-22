@@ -59,4 +59,50 @@ set4 = set1.intersection(set2)
 print(set4)
 print(100 * "-")
 
+me = {
+    'name': "Umidbek",
+    'age': 20,
+    'height': 1.75
+}
+print(me)
+print(100 * "-")
 
+print(len(me))
+print(100 * "-")
+
+print(type(me))
+print(100 * "-")
+
+print(me['age'])
+print(100 * "-")
+
+print(me['name'])
+print(100 * "-")
+
+me['age'] = 23
+print(me['age'])
+print(100 * "-")
+
+me.update({"location": 'Tashkent'})
+print(me)
+print(100 * "-")
+
+me.pop('age')
+print(me)
+print(100 * "-")
+
+for item in me:
+    print(item)
+print(100 * "-")
+
+for key in me.keys():
+    print(key)
+print(100 * "-")
+
+for value in me.values():
+    print(value)
+print(100 * "-")
+
+for key, value in me.items():
+    print(key, value)
+print(100 * "-")
