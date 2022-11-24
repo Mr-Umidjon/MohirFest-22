@@ -41,6 +41,16 @@ set_num.update([6, 5, 7])
 print(set_num)
 print(100 * "-")
 
-set_num.
+set_num.remove(1)
 print(set_num)
+print(100 * "-")
+
+for num in set_num:
+    print(num)
+print(100 * "-")
+
+set1 = {'a', 'b', 'c'}
+set2 = {1, 2, 3, 4}
+set3 = set1.union(set2)
+print(set3)
 print(100 * "-")
