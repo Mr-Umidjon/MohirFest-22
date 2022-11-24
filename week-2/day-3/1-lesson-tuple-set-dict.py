@@ -32,3 +32,15 @@ print(100 * "-")
 set_num = {1, 3, 2, 1, 4, 4, 3}
 print(type(set_num))
 print(100 * "-")
+
+set_num.add(23)
+print(set_num)
+print(100 * "-")
+
+set_num.update([6, 5, 7])
+print(set_num)
+print(100 * "-")
+
+set_num.
+print(set_num)
+print(100 * "-")
