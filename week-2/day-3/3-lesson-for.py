@@ -8,3 +8,13 @@ print(100 * '-')
 for num in numbers:
     print(num)
 print(100 * '-')
+
+for num in numbers:
+    if num % 2 == 0:
+        print(num)
+print(100 * '-')
+
+for num in numbers:
+    if num % 2 == 1:
+        print(num)
+print(100 * '-')
