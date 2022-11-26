@@ -26,3 +26,4 @@ Qatnashuvchilariga qulaylik yaratish maqsadida o'quv jarayoni yosh bo'yicha 2 yo
 🔸Bot konstruktorlari yordamida Telegram bot yaratish<br>
 
 1 oy davomida yuqoridagi texnologiyalarning eng muhim qismlari o'rgatiladi. Raqamli oromgohni tugatgan o'quvchilar amaliy va nazariy bilimlarga ega bo'lishadi.
+
