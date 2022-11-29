@@ -1,6 +1,7 @@
 from django.http import Http404
 from django.shortcuts import render, get_object_or_404
 from .models import Blog
+from django.views.generic import ListView, DetailView
 
 
 # Create your views here.
@@ -26,3 +27,15 @@ def blog_detail_viewer(request, id):
     #     raise Http404('No blog found')
 
     return render(request=request, template_name='blog_detail.html', context=context)
+
+
+class BlogListView(ListView):
+    model = Blog
+    template_name = "home.html"
+    context_object_name = 'blogs'
+
+
+class BlogDetailView(DetailView):
+    model = Blog
+    template_name = 'blog_detail.html'
+    context_object_name = 'blog'
