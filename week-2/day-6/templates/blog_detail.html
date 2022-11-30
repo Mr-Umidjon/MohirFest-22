@@ -4,4 +4,7 @@
     <h2>{{ blog.title }}</h2>
     <p>{{ blog.author }}</p>
     <h4>{{ blog.text }}</h4>
+
+    <a href="{% url 'blog_update_view' object.pk %}">Blogni tahrirlash</a>
+    <a href="{% url 'blog_delete_view' object.pk %}">Blogni o'chirish</a>
 {% endblock content %}

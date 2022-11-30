@@ -8,7 +8,10 @@
     <link href="{% static 'css/base.css' %}" rel="stylesheet">
 </head>
 <body>
-<header><a href="{% url 'blog_list_view' %}">Django blog</a></header>
+<header>
+    <a href="{% url 'blog_list_view' %}">Django blog</a>
+    <a href="{% url 'blog_create_view' %}">Yangi blog yaratish</a>
+</header>
 <div>
     {% block content %}
     {% endblock content %}

@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h2>Blog sahifa o'chirish</h2>
+    <form method="post">{% csrf_token %}
+        <p>Rostanmi?</p>
+        <button type="submit">O'chirish</button>
+    </form>
+{% endblock content %}

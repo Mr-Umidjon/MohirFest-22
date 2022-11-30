@@ -1,7 +1,8 @@
 from django.http import Http404
 from django.shortcuts import render, get_object_or_404
 from .models import Blog
-from django.views.generic import ListView, DetailView, CreateView, UpdateView
+from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
+from django.urls import reverse_lazy
 
 
 # Create your views here.
@@ -52,3 +53,9 @@ class BlogUpdateView(UpdateView):
     template_name = 'blog_update.html'
     fields = ['title', 'author', 'text']
     # fields = "__all__"
+
+
+class BlogDeleteView(DeleteView):
+    model = Blog
+    template_name = 'blog_delete.html'
+    success_url = reverse_lazy('blog_list_view')
