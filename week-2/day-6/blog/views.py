@@ -1,7 +1,7 @@
 from django.http import Http404
 from django.shortcuts import render, get_object_or_404
 from .models import Blog
-from django.views.generic import ListView, DetailView, CreateView
+from django.views.generic import ListView, DetailView, CreateView, UpdateView
 
 
 # Create your views here.
@@ -45,3 +45,10 @@ class BlogCreateView(CreateView):
     model = Blog
     template_name = 'blog_create_new.html'
     fields = ['title', 'author', 'text']
+
+
+class BlogUpdateView(UpdateView):
+    model = Blog
+    template_name = 'blog_update.html'
+    fields = ['title', 'author', 'text']
+    # fields = "__all__"
