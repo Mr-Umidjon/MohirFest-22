@@ -2,6 +2,10 @@ import logging
 
 from aiogram import Bot, Dispatcher, executor, types
 
+import wikipedia
+
+wikipedia.set_lang('uz')
+
 API_TOKEN = '5316136617:AAFQykQEy7xZ4GVan_vEQ_h_I8Ywsg3ubFI'
 
 # Configure logging
@@ -29,11 +33,18 @@ async def send_welcome(message: types.Message):
 
 
 @dp.message_handler()
-async def echo(message: types.Message):
+async def wiki(message: types.Message):
     # old style:
     # await bot.send_message(message.chat.id, message.text)
-
-    await message.answer(message.text)
+    try:
+        response = wikipedia.summary(message.text)
+        if len(response) >= 4000:
+            for i in range(0, len(response), 4000):
+                await message.answer(response[i:i + 4000])
+        else:
+            await message.answer(response)
+    except:
+        await message.answer('aaaaaaaa')
 
 
 if __name__ == '__main__':
