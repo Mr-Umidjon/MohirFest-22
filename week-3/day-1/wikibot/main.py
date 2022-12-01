@@ -20,7 +20,6 @@ async def send_welcome(message: types.Message):
     await message.reply("Salom Wikibotga Xush kelibsiz!")
 
 
-
 @dp.message_handler(commands=['help'])
 async def send_welcome(message: types.Message):
     """
