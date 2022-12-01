@@ -44,7 +44,7 @@ async def wiki(message: types.Message):
         else:
             await message.answer(response)
     except:
-        await message.answer('aaaaaaaa')
+        await message.answer('Bu mavzuga oid maqola topilmadi!')
 
 
 if __name__ == '__main__':
